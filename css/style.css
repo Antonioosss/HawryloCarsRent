@@ -1,0 +1,231 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+    
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+/* ========================= NAVBAR =========================*/
+
+.navbar {
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.85) !important;
+    backdrop-filter: blur(5px);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+/* ========================= HERO SECTION =========================*/
+
+.hero-section {
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../images/banners/hero.jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+.hero-section::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.main-title {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.main-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* ========================= CARS SECTION =========================*/
+
+.cars-section {
+    padding: 100px 0;
+    background-color: #181818;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.car-card {
+    background-color: #222;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+}
+
+.car-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.car-content {
+    padding: 20px;
+}
+
+.car-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.car-price {
+    color: #ffc107;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* ========================= RESERVATION =========================*/
+
+.reservation-section {
+    padding: 100px 0;
+    background-color: #111;
+}
+
+.form-control,
+.form-select {
+    background-color: #222;
+    border: 1px solid #444;
+    color: white;
+    padding: 12px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: #222;
+    color: white;
+    border-color: #ffc107;
+    box-shadow: none;
+}
+
+.form-label {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+textarea {
+    resize: none;
+}
+
+.saved-reservations {
+    padding: 100px 0;
+    background-color: #181818;
+}
+
+.reservation-card {
+    background-color: #222;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.reservation-card h3 {
+    margin-bottom: 20px;
+}
+
+.reservation-card p {
+    margin-bottom: 10px;
+}
+
+/* ========================= CONTACT =========================*/
+
+.contact-section {
+    padding: 100px 0;
+    background-color: #111;
+}
+
+.contact-card {
+    background-color: #222;
+    padding: 40px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.contact-card h3 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #ffc107;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: white;
+}
+
+/* ========================= FOOTER =========================*/
+
+.footer {
+    background-color: #000;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.footer p {
+    margin: 5px 0;
+    color: #aaa;
+}

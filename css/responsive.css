@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+
+    .main-title {
+        font-size: 3rem;
+    }
+
+    .main-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .car-image {
+    height: 200px;
+    }
+
+    .contact-card {      
+    margin-bottom: 20px;
+    }
+
+}

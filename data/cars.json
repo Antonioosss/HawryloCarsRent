@@ -1,0 +1,38 @@
+[
+    {
+        "name": "HONDA Civic 5",
+        "price": "250 PLN / day",
+        "image": "images/cars/civic5.jpg"
+    },
+
+    {
+        "name": "HONDA Civic 7 Si",
+        "price": "300 PLN / day",
+        "image": "images/cars/civic7si.jpg"
+    },
+
+    {
+        "name": "HONDA Civic 7 Type R",
+        "price": "350 PLN / day",
+        "image": "images/cars/civic7typer.jpg"
+    },
+
+    {
+        "name": "HONDA Prelude",
+        "price": "200 PLN / day",
+        "image": "images/cars/prelude.jpg"
+    },
+
+    {
+        "name": "HONDA NSX",
+        "price": "500 PLN / day",
+        "image": "images/cars/nsx.jpg"
+    },
+
+    {
+        "name": "HONDA Civic 7 Sport",
+        "price": "999 PLN / day",
+        "image": "images/cars/civic7sport.jpg"
+    }
+
+]

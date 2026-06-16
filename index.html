@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hawrylo Cars Rent</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">
+                    Hawrylo Cars Rent
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cars">
+                                Cars
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reservation-section">
+                                Reservations
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero-section"
+                id="home"
+        >
+
+            <div class="container text-center">
+
+                <h1 class="main-title">
+                    Hawrylo Cars Rent
+                </h1>
+
+                <p class="main-subtitle">
+                    Drive Your Dream HONDA
+                </p>
+
+                <a
+                    href="#cars"
+                    class="btn btn-warning btn-lg"
+                >
+                    Explore Cars
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="cars-section"
+                    id="cars"
+        >
+
+            <div class="container">
+
+                <h2 class="section-title text-center">
+                    Our Cars
+                </h2>
+
+                <div class="row" id="cars-container">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="reservation-section"
+                    id="reservation-section">
+
+            <div class="container">
+
+                <h2 class="section-title text-center">
+                    Car Reservation
+                </h2>
+
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-8">
+
+                        <form id="reservation-form">
+
+                            <div class="mb-3">
+                                <label class="form-label">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="full-name"
+                                    name="full-name"
+                                    required
+                                    maxlength="40"
+                                    placeholder="e.g. John Smith"
+                                    pattern="[A-Za-zĄąĆćĘęŁłŃńÓóŚśŹźŻż]{2,}( [A-Za-zĄąĆćĘęŁłŃńÓóŚśŹźŻż]{2,})?"
+                                    title="Enter valid name (max two words, letters only)"
+                                >
+
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    name="email"
+                                    required
+                                    minlength="5"
+                                    maxlength="50"
+                                    placeholder="example@gmail.com"
+                                    title="Enter valid email address"
+                                >
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">
+                                    Phone Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    id="phone"
+                                    name="phone"
+                                    required
+                                    placeholder="123 456 789"
+                                    pattern="([0-9]{3} [0-9]{3} [0-9]{3})|([0-9]{3}-[0-9]{3}-[0-9]{3})"
+                                    title="Enter phone number in format: 123 456 789 or 123-456-789"
+                                >
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Select Car
+                                </label>
+
+                                <select class="form-select" id="car-select" required>
+
+                                    <option value="">
+                                        Choose car
+                                    </option>
+
+                                    <option>
+                                        HONDA Civic 5
+                                    </option>
+
+                                    <option>
+                                        HONDA Civic 7 Si
+                                    </option>
+
+                                    <option>
+                                        HONDA Civic 7 Type R
+                                    </option>
+
+                                    <option>
+                                        HONDA Prelude
+                                    </option>
+
+                                    <option>
+                                        HONDA NSX
+                                    </option>
+
+                                    <option>
+                                        HONDA Civic 7 Sport
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Rental Days
+                                </label>
+
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="days"
+                                    name="days"
+                                    required
+                                    min="1"
+                                    max="30"
+                                    placeholder="1-30"
+                                    title="Rental period must be between 1 and 30 days"
+                                >
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label class="form-label d-block">
+                                    Transmission
+                                </label>
+
+                                <div class="form-check form-check-inline">
+
+                                    <input class="form-check-input" type="radio" name="transmission" value="Automatic"
+                                        checked>
+
+                                    <label class="form-check-label">
+                                        Automatic
+                                    </label>
+
+                                </div>
+
+                                <div class="form-check form-check-inline">
+
+                                    <input class="form-check-input" type="radio" name="transmission" value="Manual">
+
+                                    <label class="form-check-label">
+                                        Manual
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label class="form-label d-block">
+                                    Additional Options
+                                </label>
+
+                                <div class="form-check">
+
+                                    <input class="form-check-input" type="checkbox" value="Full Insurance"
+                                        id="insurance">
+
+                                    <label class="form-check-label">
+                                        Full Insurance
+                                    </label>
+
+                                </div>
+
+                                <div class="form-check">
+
+                                    <input class="form-check-input" type="checkbox" value="VIP Package" id="vip">
+
+                                    <label class="form-check-label">
+                                        VIP Package
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Additional Notes
+                                </label>
+
+                                <textarea class="form-control" rows="4" id="notes"></textarea>
+
+                            </div>
+
+                            <button type="submit" class="btn btn-warning w-100">
+                                Reserve Car
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="saved-reservations">
+
+            <div class="container">
+
+                <h2 class="section-title text-center">
+                    My Reservations
+                </h2>
+
+                <div
+                    class="row"
+                    id="reservations-container"
+                >
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section
+    class="contact-section"
+    id="contact"
+>
+
+    <div class="container">
+
+        <h2 class="section-title text-center">
+            Contact
+        </h2>
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <div class="contact-card">
+
+                    <h3>
+                        Hawrylo Cars Rent
+                    </h3>
+
+                    <p>
+                        Premium car rental experience
+                    </p>
+
+                    <p>
+                        <strong>Phone:</strong>
+                        +48 123 456 789
+                    </p>
+
+                    <p>
+                        <strong>Email:</strong>
+                        contact@hawrylocars.pl
+                    </p>
+
+                    <p>
+                        <strong>Location:</strong>
+                        Warsaw, Poland
+                    </p>
+
+                    <p>
+                        <strong>Working Hours:</strong>
+                        8:00 - 22:00
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="contact-card">
+
+                    <h3>
+                        Follow Us
+                    </h3>
+
+                    <div class="social-links">
+
+                        <a href="https://www.instagram.com/">
+                            Instagram
+                            <br>
+                        </a>
+
+                        <a href="https://www.facebook.com/">
+                            Facebook
+                            <br>
+                        </a>
+
+                        <a href="https://www.tiktok.com/">
+                            TikTok
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+    <footer class="footer">
+    <div class="container text-center">
+
+        <p>
+            © 2026 Hawrylo Cars Rent
+        </p>
+
+        <p>
+            Premium Honda Car Rental
+        </p>
+
+    </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- JS -->
+    <script src="js/storage.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
